@@ -1,0 +1,94 @@
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+  background-image: url("lion-cub.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pad
+{
+  padding-top:4%;
+}
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+
+.maincontainer{
+  background-color: rgba(255,254,179, 0.3);
+  color: inherit;
+}
+
+
+
+/**************
+intestazione
+**************/
+
+.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere questo:
+  background-image: url('nomeimmagine.estensione');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+*/
+
+background-color: rgba(192,156,140, 0.6);
+
+
+}
+.bottone:hover{
+  background-color:#0a1010;
+  border-color: #0a1010;
+}
+
+.bottone{
+  background-color: #313131;
+  border-color: #313131;
+}
+
+.contatti{
+  padding-left: 10%;
+}
+/*
+codice per cambiare lo sfondo del jumbotron
+*/
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bold;
+}
+
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:italic;
+}
+
+.intestazione h4{
+  font-size:10pt;
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+}
+
+/****************
+sezione educazione
+**********/
+
+
+.education{
+  list-style-type: none;
+}
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}

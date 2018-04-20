@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+<html>
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+   <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="foto.jpeg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Emma Pistono</h1>
+                  <h3 >studentessa</h3>
+                  <h4>mi chiamo Emma, <br>
+                    ho 15 anni<br>
+                    sono una ragazza che ama <br>
+                    <ul>
+                      <li>la musica</li>
+                      <li> gli animali</li>
+                      <li> viaggiare per il mondo</li>
+                    </ul>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:emma.pistono@gmail.com" >mail</a></li>
+                        <li><a href="mailto:emma.pistono@yahoo.it" >mail</a></li>
+                      <li><a href="https://www.instagram.com/emma_pistono/">instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Film</h2>
+                                    <img class="img-thumbnail3 img-responsive" max-width="200" src="pianista-sull-oceano.jpeg">
+<p><strong>Il pianista sull'oceano</strong><br>
+</p>
+
+                  <!-- Elemento 1-->
+
+          <br>
+
+                  <!-- Elemento 2-->
+
+
+
+
+                  <br>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano</li>
+                      <li>Inglese </li>
+                      <li>Spagnolo</li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">School</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa,<br>
+                         frequento la prima superiore al liceo scientifico internazionale ad opzione spagnola<br>
+                       al liceo Carlo Botta ad Ivrea.  </p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Passion</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p><strong>musica</strong><br>
+                      mi piace molto la musica, <br>
+                      è una mia passione,<br>
+                       ascolto tutti i generi e <br>
+                       non esco mai senza cuffiette.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p><strong>animali</strong><br>
+                      amo tutti gli animali,<br>
+                      ho un gatto,<br>
+                    ma un giorno spero di riuscire<br>
+                     ad avere molti animali.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p><strong>viaggiare</strong><br>
+                      una mia passione è viaggiare<br>
+                    vorrei visitare tutto il mondo<br>
+                  per fare nuove esperienze,<br>
+                amicizie e scoperte.  </p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="favourite place">
+                  <h2 class="section-title">favourite place</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="edimburgo.jpeg" class="img-thumbnail2 img-responsive" max-width="100"><br>
+                        <p><strong>Edimburgo</strong></p><br>
+                        <br><br>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="mdrid.jpeg" class="img-thumbnail2 img-responsive" max-width="100">
+                        <p><strong>Madrid</strong><p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

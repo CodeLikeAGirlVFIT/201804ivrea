@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+     <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="gaia.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >GAIA PERETTI</h1>
+
+<br>
+<br>
+                  <h4> Così, viaggiando nel tempo, nei giorni, conosci milioni di anime. Ci parli, sorridi, le guardi, di tanto in tanto ti fermi, ricambi gli sguardi. Poi però riprendi il tuo cammino. D'improvviso ne incontri una che stravolge il senso del tuo percorso per sempre […]. Dopodichè nulla sarà più maledettamente uguale. Mai più. E nel preciso istante in cui te ne accorgerai, capirai perchè da tutto il resto sei sempre andato via. </h4>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:nome.cognome@mail.com" >gaia.peretti@libero.it</a></li>
+                      <li><a href="#" target="_blank"  >ask: GaiaPeretti </a></li>
+                      <li><a href="https://twitter.com/twittername" target="_blank"  >ig: gaia.granata </a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">frequento il liceo carlo botta a Ivrea</li>
+                      <li class="doveed">studio lingue</li>
+                      <li class="descrizioneed">in futuro mi piacerebbe fare giornalismo o lettere perchè vorrei diventare una giornalista sportiva o una scrittrice e mescolare alcune delle mie passioni. Non so dove mi porteranno i miei studi, ma spero di trovare un lavoro che mi appassioni e mi soddisfi.</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+
+
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc"></span></li>
+                      <li>Inglese <span class="lang-desc"></span></li>
+                      <li>Spagnolo <span class="lang-desc">
+                      <li> russo <span class="lang-desc"></span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p> Sono una studentessa, frequento il liceo linguistico e amo viaggiare. La mia passione è il calcio e andare allo stadio (lo stadio grande torino perchè sono una grande tifosa del toro, come mia mamma). Mi piace anche leggere libri di ogni tipo, ascoltare musica, principalmente rap, giocare a pallavolo nella mia squadra e scattare fotografie.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Tempo libero</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p> Nel tempo libero leggo moltissimi libri e sottolineo le mie frasi preferite, cos&igrave; posso ritrovarle sempre. Qua ce ne sono alcune dei miei libri o delle mie canzoni preferite, quella in alto fa parte di "il quadro mai dipinto", di massimo bisotti</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>If two person are destined to be together, sooner or later, they will always meet again. Always. Remember.</p>
+<br>
+<br>
+<p>-You are psycopathic.</p>
+<p> -I prefer creative. </p>
+                  </div>
+
+                  <div class="col-sm-4 prog3">
+                      <p>Così stanno le cose. Sei scolpita nel mio cuore, Clark, fin dal primo giorno in cui sei arrivata con i tuoi abiti ridicoli, le tue terribili battute e la tua totale incapacità di nascondere ogni minima sensazione. Tu hai cambiato la mia vita molto più di quanto questo denaro potrà cambiare la tua. Non pensare a me troppo spesso. Non voglio pensarti in un mare di lacrime.Vivi bene. Semplicemente, vivi. Con amore, Will.
+—  Io prima di te.</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                      <img src="pallavolo.png" class="img-thumbnail img-responsive" max-width="200">
+<p> gioco a pallavolo a Cuorgnè, sono un opposto e gioco da circa cinque anni. </p>
+<br>
+<p> Ci vuole impegno dedizione, sudore, talento,  ricorda che nessuno ha iniziato vincendo. </p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="toro.png" class="img-thumbnail img-respo" max-width="200">
+                        <p>Sì è del toro perché la vita bisogna viverla non guardarla.
+Sì è del toro perché la libertà e la fantasia non hanno prezzo (ma sono molto selettive).
+Sì è del toro perché contro l'ingiustizia qualcuno dovrà pur esserci.
+Sì è del toro perché se tutti piegassimo la schiena, dalla scimmia non sarebbe nato l'uomo.
+Sei del toro perché essere pochi ma buoni è meglio che essere tanti e coglioni.
+Sì è del toro perché si è fortunati.
+Sì è del toro perché chi non è del toro non potrà mai capire.
+Sì è del toro perché ditemi, chi non si è mai innamorato?
+Sì è del toro perché, beh, non c'è bisogno di un perché.😻</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

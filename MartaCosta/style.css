@@ -1,0 +1,80 @@
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+  background-image: url("fiore.jpg");
+}
+
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+
+.maincontainer{
+  background-color: rgba(255,255,255, 0.5);
+  color: inherit;
+}
+
+.btn {
+  background-color: rgb(20,20,20,10)
+}
+
+/**************
+intestazione
+**************/
+
+.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere questo:
+  background-image: url('nomeimmagine.estensione');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+*/
+background-image:url('noche.jpg');
+}
+
+/*
+codice per cambiare lo sfondo del jumbotron
+*/
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bolder;
+  color:white;
+}
+
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:oblique;
+  color:white;
+}
+
+.intestazione h4{
+  font-size:10pt;
+  font-family: monospace;
+
+
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+}
+
+/****************
+sezione educazione
+**********/
+
+
+.education{
+  list-style-type: none;
+}
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}

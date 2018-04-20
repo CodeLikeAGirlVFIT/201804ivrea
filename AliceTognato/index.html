@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="fotoprofilo.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Alice Tognato</h1>
+                  <h3 >studentessa</h3>
+                  <h4>determinata,sociale,intraprendente</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Carpe Diem! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="https://www.instagram.com/ali_togna.nric/" >alytogna@gmail.com (email)</a></li>
+
+                      <li><a href="#" target="_blank"  >alytogna (twitter)</a></li>
+                      <li><a href="https://instagram/instagram" target="_blank"  >ali_togna.nric (instagram)</a></li>
+                  </ul>
+              </div>
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Educazione</h2>
+
+
+                  <!-- Elemento 1-->
+
+
+
+
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="educazione">
+                      <li class="nomeed">Diploma</li>
+                      <li class="doveed">Liceo scientifico A.Gramsci,Ivrea</li>
+                      <li class="descrizioneed">Bisogna essere sempre alla ricerca del sapere. Sapere Auda.</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Lingue</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc"></span></li>
+                      <li>Inglese <span class="lang-desc"></span></li>
+
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Frequento il liceo scientifico A.Gramsci a Ivrea,indirizzo scienze umane. Mi piace particolarmente psicologia perche` secondo me rientra nella vita di tutti. Ascolto maggiormente musica punk e rock ma anche alcuni cantanti indipendenti come Calcutta,Cosmo e Coez. I Green Day sono il mio gruppo preferito. Ho fatto atletica,nuoto e calcio nella squadra femminile dell'Ivrea..</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Viaggi</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Grecia,
+                      Inghilterra (Londra),
+                    Francia</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Danimarca (Copenaghen),
+                      Egitto (Il Cairo),
+                    Tunisia (Djerba)</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Spagna (Barcellona)
+                      </p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="foto arance.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Il carnevale d'Ivrea mi ha sempre appassionato e ormai tiro le arance da quando sono piccola.Forza arduini!!!</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="football.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Il calcio e` sempre stata una mia grande passione,anzi un sogno che per fortuna ho realizzato. Ho giocato per diversi anni nell'Ivrea femminile.</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+  background-image: url(mare.jpg);
+}
+
+*
+{
+  font-family: cursive;
+}
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+
+.maincontainer{
+  background-color: grey(0,5);
+}
+
+
+
+/**************
+intestazione
+**************/
+
+.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere questo:
+  background-image: url('nomeimmagine.estensione');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+*/
+background-color:rgba(255,255,255,0.5)
+}
+
+/*
+codice per cambiare lo sfondo del jumbotron
+*/
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bold;
+}
+
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:italic;
+}
+
+.intestazione h4{
+  font-size:10pt;
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+}
+
+/****************
+sezione educazione
+**********/
+
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}
+
+
+col-sm-8{
+  color:black
+}
+
+.col1{
+  background-color: rgba(255,255,255,0.5)
+}

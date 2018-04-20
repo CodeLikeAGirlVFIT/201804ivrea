@@ -1,0 +1,114 @@
+
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+  background-color: deeppink;
+}
+
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+
+.maincontainer{
+  background-color: pink;
+  color: inherit;
+}
+
+
+
+/**************
+intestazione
+**************/
+
+.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere questo:*/
+  background-image: url('basket.jpg');
+  background-size:auto;
+
+  background-attachment:local;
+  background-color: pink;
+  min-height: 300px;
+  background-repeat:space;
+  background-position:right;
+  border: solid 4px
+
+
+}
+
+/*
+codice per cambiare lo sfondo del jumbotron
+*/
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bolds;
+  color: #4d004d;
+}
+
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:italic;
+  color: #FF6088;
+  font-weight:bolds;
+
+}
+.sci1{
+  font-size: 15px
+}
+.sci2{
+  font-size: 15px
+}
+
+.pino{
+   background-color: purple;
+   border: purple;
+}
+.criminologia{
+  font-size: 20px;
+  color: purple
+}
+.crime1{
+  font-size: 15px;
+}
+.crime2{
+ font-size: 15px
+}
+
+.sciare{
+  font-size: 20px;
+  color: purple
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+
+}
+
+
+/****************
+sezione educazione
+**********/
+
+
+.education{
+  list-style-type: none;
+}
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}
+.col-sm-6 pass1
+{
+  height:20px;
+  }
+.section-title{
+  color:purple;
+  }

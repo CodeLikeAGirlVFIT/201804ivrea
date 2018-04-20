@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+<html>
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione fondo1">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6 ">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="me.jpg">
+                </div>
+                <div class="col-sm-6 scritta1">
+                  <h1 >Arianna Zaglio</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Adoro la musica e ballare. Mi piacerebbe fare il giro del mondo, infatti adoro viaggiare </h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:nome.cognome@mail.com" >mail</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">School</h2>
+
+
+                  <!-- Elemento 1-->
+            <p>
+                  <h7>Ho 13 anni e frequento la terza media. L'anno prossimo faro' il liceo classico al D'Azeglio a  Torino.</h7>
+                  <h7>Le mie materie preferite sono inglese e letteratura. Oltre a inglese studio il francese.
+            </p>
+              </div>
+
+<h2 class="section-title">Languages</h2>
+
+<p>
+  <ul>
+    <li>Italiano</il>
+    <li>Inglese</il>
+    <li>Francese</il>
+  </ul>
+
+</p>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p> Sono una studentessa e ho 13 anni, nel tempo libero mi piace ascoltare musica( principalmente pop, hip hop e rock), leggere e disegnare. Adoro viaggiare!</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title"></h2>
+                <div class="row">
+
+          </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passions</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <p>Adoro la musica e soprattutto la danza. Ballo da cinque anni e faccio anche dei contest con una crew. Quando ho tempo mi pace anche guardare i film, leggere e disegnare. Adoro ascoltare la musica, che e' molto importante per me. </p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="music2.jpg" class="img-thumbnail img-responsive" max-width="100">
+                  </div>
+              </section>
+
+</body>
+</html>

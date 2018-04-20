@@ -3,7 +3,8 @@ Qui modifico tutto il body del mio html
 **************/
 
 body{
-  background-color:#ececec;
+  background-color:grey;
+  background-image: url('Pattern_smorto.jpg');
 }
 
 
@@ -22,12 +23,12 @@ Qui vado a definire il contenirore del mio contenuto
 intestazione
 **************/
 
-.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere questo:
-  background-image: url('nomeimmagine.estensione');
+.jumbotron{
+  background-image: url('frost.jpg');
   background-size: cover;
   background-attachment: fixed;
   min-height: 600px;
-*/
+
 
 }
 
@@ -38,6 +39,7 @@ codice per cambiare lo sfondo del jumbotron
 .intestazione h1{
   font-size:30pt;
   font-weight:bold;
+  color:blue;
 }
 
 

@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-5">
+
+                  <div class="row">
+                   <div class="col-sm-6" style="text-align:left"><img class="img-thumbnail img-responsive" max-width="100" src="mauty.jpg" style="width:200px" ></div>
+                   <div class="col-sm-6"></div>
+
+                   </div>
+
+                </div>
+                <div class="col-sm-2">
+                  <h1 >Martina Gennari</h1>
+
+                  <br>
+                  <br>
+
+                  <h3><strong><i>sono all'inferno</i></strong></h3>
+                  <h3><strong><i>e tu sei</i></strong></h3>
+                  <h3><strong><i>sei un angelo</i></strong></h3>
+                  <h3><strong><i>al citofono</i></strong></h3>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg pino" >Bottone! &raquo;</a></p>
+                </div>
+                  <div class="col-sm-5">
+                    <br>
+                  </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li>mail: mautyg@gmail.com</li>
+
+                      <li>instragram account: @martina.gennarii</li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title"><b>*Education:</b></h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">frequento il Liceo Carlo Botta a ivrea</li>
+                      <li class="doveed">Indirizzo Scientifico Internazionale (SIS)</li>
+
+
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title"><b>*Languages:</b></h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Advanced)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(Advanced)</span></li>
+                      <li>Francese <span class="lang-desc">(Beginner)</span></li>
+                      <li>Latino <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title"><b>*About me:</b></h2>
+                  <div class="summary">
+                      <p>Mi piace giocare a basket perchè quando gioco mi sembra di essere invincibile e imbattibile facendo ciò che amo.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title"><b>*Progetti:</b></h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p> Da grande mi piacerebbe intraprendere la carriera di criminologa poichè è da quando sono piccola che mi appassiona il contesto della criminologia</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Mi piacerebbe diventare prima istruttrice di minibasket e poi allenatrice di basket, lo sport che pratico dall'età di 5 anni.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title"><b>*Passioni:</b></h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="foto sci.jpg " class="img-thumbnail img-responsive" max-width="200">
+                        <h2 class="sciare">Sciare:</h2>
+                          <p class="sci1">Sciare fuori pista non è un divertimento, è vita vissuta al massimo, in un lampo di realtà. ~(Dolores La Chapelle)</p>
+                          <p class="sci2">Lo sci è una danza e la montagna è il tuo partner ~ (Anonimo)</p>
+
+
+
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="crime.jpg" class="img-thumbnail img-responsive" max-width="200">
+                      <h2 class="criminologia">Crime:</h2>
+                      <p class="sci1">Ogni uomo è un criminale senza saperlo. ~(Albert Camus)</p>
+                      <p class="sci2">La singolarità è quasi sempre un indizio. Più un crimine è anonimo e banale, più è difficile scoprire il colpevole ~ (Sir Arthur Conan Doyle)</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

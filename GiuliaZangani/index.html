@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+<html>
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-4">
+                  <img class="img-thumbnail img-responsive" max-width="100" src="gordon.jpg">
+                </div>
+
+                <div class="col-sm-2"> </div>
+                <div class="col-sm-6 pad">
+                  <h1 >Giulia Zangani</h1>
+                  <h3 >studentessa</h3>
+
+
+
+                  <br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg bottone"  href="https://www.worldwildlife.org/how-to-help" >DO SOMETHING GOOD! &raquo;</a>
+                  </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contatti contact-container container-block">
+              <p >
+
+                <h3> Contatti </h3>
+
+                    <a href="https://www.instagram.com/giuliazangani/" >
+                        <img src="instagram-logo.png" style="width:40px; height:30px; border:0">
+                    </a> <br>
+                    <a href="https://twitter.com/giuliazangani" >
+                        <img src="twitter-logo.png" style="width:40px; height:40px; border:0">
+                    </a> <br>
+                    <a href="mailto:giulia.zangani@gmail.com" >
+                      <img src="email-logo.png" style="width:35px; height:35px; border:0">
+                    </a>
+              </p>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h3 class="section-title">Education</h3>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Diploma di Maturita' Scientifica</li>
+                      <li class="doveed">Liceo Carlo Botta di Ivrea</li>
+                      <li class="descrizioneed">2013-2018</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h3 class="section-title">Languages</h3>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(C2)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(B2)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa di 18 anni, frequento l'ultimo anno del liceo scientifico e l'anno prossimo vorrei iscrivermi a Veterinaria a Torino. Mi piacciono molto i viaggi e gli animali, e da grande mi pacerebbe lavorare per la preservazione dei grandi felini.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="travels">
+                <h2 class="section-title">Travels</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p> <h6> Vietnam e Cambogia </h6> </p>
+                    <p> <h6> New York </h6> </p>
+                    <p> <h6> Croazia </h6> </p>
+                    <p> <h6> Islanda </h6> </p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                    <p> <h6> Costa Ovest Stati Uniti </h6> </p>
+                    <p> <h6> Florida </h6> </p>
+                    <p> <h6> Sri-Lanka </h6> </p>
+                    <p> <h6> Irlanda </h6> </p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                    <p> <h6> Maldive </h6> </p>
+                    <p> <h6> Malesia </h6> </p>
+                    <p> <h6> Borneo </h6> </p>
+                    <p> <h6> Scozia </h6> </p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">I "miei" animali</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="maia.jpg" class="img-thumbnail img-responsive" max-width="200" max-height="200">
+
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="gordonlapo.jpg" class="img-thumbnail img-responsive" max-width="200" max-height="200">
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+        <div class="jumbotron">
+
+            <div class="row intestazione">
+                <div class="col-sm-6 foto">
+                  <img class="img-thumbnail img-responsive" style="text-align:center;"  src="https://scontent-mxp1-1.cdninstagram.com/vp/9e394f2787c88b6a390ed8c29caab473/5B51338C/t51.2885-15/e35/20393704_155348108373187_8165518271840256000_n.jpg">
+                </div>
+                <div class="col-sm-6 testo">
+                  <h1 id="titolo">Alison Meyer</h1>
+                  <h3 >studentessa</h3>
+                  <br><br>
+                  <h4>"Quando c'e` un problema, non cercare il colpevole, ma cerca la soluzione".~Proverbio giapponese</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg bottone" href="https://www.instagram.com/aly_m203/?hl=it" >Clicca! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogint" >mail</a></li>
+                      <li><a href="https://github.com/AlisonMeyer" target="_blank"  >github.com/username</a></li>
+                      <li><a href="https://twitter.com/twittername" target="_blank"  >@twittername</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Viaggi</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Estero</li>
+                      <li class="doveed">Canada</li><ul>
+                          <li>Ottawa</li>
+                          <li>Montreal</li>
+                          <li>Quebec</li>
+                         </ul>
+                       </li>
+                      <li class="doveed">Cina</li><ul>
+                           <li>Shanghai</li>
+                           <li>Hong Kong</li>
+                           <li>Guangzhou</li>
+                          </ul>
+                      <li class="doveed">United Kingdom</li><ul>
+                           <li> Cambridge</li>
+                           <li>London</li>
+                           <li>Oxford</li>
+                          </ul>
+                      <li class="doveed">Amsterdam</li>
+                      <li class="doveed">Lione</li>
+                      <li class="doveed">Joao Pessoa (Brasile)</li>
+                    </ul>
+
+                  <ul  class="italia">
+                      <li class="nomeed">Italia</li>
+                      <li>Roma</li>
+                      <li>Firenze</li>
+                      <li>Trentino</li>
+                      <li>Garda</li>
+                      <li>Sardegna</li>
+                      <li>Puglia</li>
+                      <li>Assisa</li>
+                      <li>Milano</li>
+                      <li>Verona</li>
+                      <li>Como</li>
+
+                  </ul>
+              </div>
+
+
+
+
+              <div class="lingue">
+                  <h2 class="section-title">Lingue</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Madre  Lingua)</span></li>
+                      <li>Inglese <span class="lang-desc">(B2)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa e frequento il quarto anno di liceo scientifico a Rivoli, vicino a Torino. La mia piu' grande passione e' viaggiare,soprattutto all' estero, perche ti permette di scoprire tantissime nuove culture e aprire la mente sul mondo che ci circonda. </p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Educazione</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <ul class="edu"><li class="scuola">Itis Giulio Natta</li>
+                          <li>Rivoli</li>
+                          <li>Liceo Scientifico Scienze Applicate</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <ul class="edu"><li class="scuola">Scuola Maria Ausiliatrice</li>
+                      <li>Giaveno</li>
+                      <li>Scuola Secondaria di primo grado</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <ul class="edu"><li class="scuola">Scuola Dorina Abbeg</li>
+                      <li>S. Antonino di Susa</li>
+                      <li>Scuola Primaria</li>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="aereo.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p class="vili">Viaggiare</p>
+                        <p class="desc">"Il modo migliore per cercare di capire il mondo e' vederlo dal maggior numero di angolazioni possibili".~ Ari Kiev</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="libri.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p class="vili">Leggere</p>
+                        <p class="desc">“Questa è la parte più bella di tutta la letteratura: scoprire che i tuoi desideri sono desideri universali, che non sei solo o isolato da nessuno. Tu appartieni”.~Francis Scott Fitzgerald</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
